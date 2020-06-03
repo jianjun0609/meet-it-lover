@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lover.mapper.ItUserDetailMapper">
+  <resultMap id="BaseResultMap" type="com.lover.model.ItUserDetail">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="we_chat_num" jdbcType="VARCHAR" property="weChatNum" />
+    <result column="logo_path" jdbcType="VARCHAR" property="logoPath" />
+    <result column="qq_num" jdbcType="VARCHAR" property="qqNum" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="style" jdbcType="VARCHAR" property="style" />
+    <result column="province" jdbcType="VARCHAR" property="province" />
+    <result column="city" jdbcType="VARCHAR" property="city" />
+    <result column="work_province" jdbcType="VARCHAR" property="workProvince" />
+    <result column="work_city" jdbcType="VARCHAR" property="workCity" />
+    <result column="age" jdbcType="INTEGER" property="age" />
+    <result column="height" jdbcType="INTEGER" property="height" />
+    <result column="weight" jdbcType="INTEGER" property="weight" />
+    <result column="occupation" jdbcType="VARCHAR" property="occupation" />
+    <result column="character" jdbcType="VARCHAR" property="character" />
+    <result column="education" jdbcType="INTEGER" property="education" />
+    <result column="income" jdbcType="DECIMAL" property="income" />
+    <result column="interest" jdbcType="VARCHAR" property="interest" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+</mapper>

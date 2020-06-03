@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lover.mapper.ItUserInfoMapper">
+  <resultMap id="BaseResultMap" type="com.lover.model.ItUserInfo">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="account_name" jdbcType="VARCHAR" property="accountName" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="nick_name" jdbcType="VARCHAR" property="nickName" />
+    <result column="phone_mobile" jdbcType="VARCHAR" property="phoneMobile" />
+    <result column="sex" jdbcType="TINYINT" property="sex" />
+    <result column="access_token" jdbcType="VARCHAR" property="accessToken" />
+    <result column="access_token_expire" jdbcType="TIMESTAMP" property="accessTokenExpire" />
+    <result column="enabled" jdbcType="TINYINT" property="enabled" />
+    <result column="real_name" jdbcType="VARCHAR" property="realName" />
+    <result column="card_num" jdbcType="VARCHAR" property="cardNum" />
+    <result column="last_login" jdbcType="TIMESTAMP" property="lastLogin" />
+    <result column="login_times" jdbcType="INTEGER" property="loginTimes" />
+    <result column="register_source" jdbcType="INTEGER" property="registerSource" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lover.mapper.ItUserPublishMapper">
+  <resultMap id="BaseResultMap" type="com.lover.model.ItUserPublish">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="height_min" jdbcType="INTEGER" property="heightMin" />
+    <result column="height_max" jdbcType="INTEGER" property="heightMax" />
+    <result column="age_min" jdbcType="INTEGER" property="ageMin" />
+    <result column="age_max" jdbcType="INTEGER" property="ageMax" />
+    <result column="weight_min" jdbcType="INTEGER" property="weightMin" />
+    <result column="weight_max" jdbcType="INTEGER" property="weightMax" />
+    <result column="income_min" jdbcType="DECIMAL" property="incomeMin" />
+    <result column="income_max" jdbcType="DECIMAL" property="incomeMax" />
+    <result column="education" jdbcType="INTEGER" property="education" />
+    <result column="work_province" jdbcType="VARCHAR" property="workProvince" />
+    <result column="work_city" jdbcType="VARCHAR" property="workCity" />
+    <result column="occupation" jdbcType="VARCHAR" property="occupation" />
+    <result column="character" jdbcType="VARCHAR" property="character" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="pic_url" jdbcType="VARCHAR" property="picUrl" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+</mapper>
