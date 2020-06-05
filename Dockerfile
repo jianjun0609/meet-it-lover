@@ -1,3 +1,7 @@
 FROM java:8
-ADD target/laiai-data-analysis.jar /usr/local/javaapp/laiai-data-analysis.jar
-RUN echo "Asia/Shanghai" > /etc/timezone
+MAINTAINER nanhaidetianzhi <957186816@qq.com>
+VOLUME /tmp
+COPY jenkins*.jar app.jar
+RUN bash -c 'touch /app.jar'
+ENV JAVA_OPTS=""
+ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar /app.jar" ]
